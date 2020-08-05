@@ -17,16 +17,28 @@ The programming post is a 6-pins JST PH SMT connector, with the following mappin
 
 ## Bill of Material
 
-|Reference Designator|Manufacturer|Product Number       |Description                     |Quantity|Value|Tolerance|Rating|Package     |
-|--------------------|------------|---------------------|--------------------------------|--------|-----|---------|------|------------|
-|U1                  |LittelFuse  |SP3401               |TVS Diode Arrays for USB        |1       |     |         |      |JEDEC MO-229|
-|U2                  |Diodes Inc. |AP2112K-3.3          |3.3V 600mA LDO w/ EN            |1       |     |         |      |SOT25       |
-|U3                  |Silicon Labs|CP2104               |USB-to-UART Bridge              |1       |     |         |      |QFN-24      |
-|Q1                  |Diodes Inc. |MMDT2222A            |Dual Small Signal NPN Transistor|1       |     |         |      |SOT363      |
-|C1, C2, C4          |            |                     |10µF, 10V SMT Ceramic Capacitor |3       |10µF |≤±20%    |≥10V  |0603        |
-|C3                  |            |                     |1µF, 10V SMT Ceramic Capacitor  |1       |1µF  |≤±20%    |≥10V  |0603        |
-|R1, R2              |            |                     |5.1kΩ SMT Resistor              |2       |5.1kΩ|≤±1%     |      |0603        |
-|R3                  |            |                     |100kΩ SMT Resistor              |1       |100kΩ|≤±5%     |      |0603        |
-|R4, R5, R6          |            |                     |10kΩ SMT Resistor               |3       |10kΩ |≤±5%     |      |0603        |
-|J1                  |Molex       |105450-0101          |USB-C SMT Connector             |1       |     |         |      |            |
-|J2                  |JST Inc.    |S6B-PH-SM4-TB(LF)(SN)|6-Pins SMT JST PH Connector     |1       |     |         |      |            |
+|Reference Designator|Manufacturer    |Product Number       |Description                     |Quantity|Value|Tolerance|Rating|Package     |
+|--------------------|----------------|---------------------|--------------------------------|--------|-----|---------|------|------------|
+|U1                  |Diodes Inc.     |AP2112K-3.3          |3.3V 600mA LDO w/ EN            |1       |     |         |      |SOT25       |
+|U2                  |Silicon Labs    |CP2104               |USB-to-UART Bridge              |1       |     |         |      |QFN-24      |
+|ESD1                |ON Semiconductor|ESD5B5.0ST1G         |TVS Diode 5V                    |1       |     |         |      |SOD523      |
+|ESD2                |LittelFuse      |SP3401               |TVS Diode Arrays for USB        |1       |     |         |      |JEDEC MO-229|
+|D1                  |Würth Elektronik|150060RS75000        |Red LED                         |1       |     |         |      |0603        |
+|D2                  |Würth Elektronik|150060GS75000        |Green LED                       |1       |     |         |      |0603        |
+|D3                  |Würth Elektronik|150060BS75000        |Blue LED                        |1       |     |         |      |0603        |
+|Q1                  |Diodes Inc.     |MMDT2222A            |Dual Small Signal NPN Transistor|1       |     |         |      |SOT363      |
+|C1, C2, C4          |                |                     |10µF, 10V SMT Ceramic Capacitor |3       |10µF |≤±20%    |≥10V  |0603        |
+|C3                  |                |                     |1µF, 10V SMT Ceramic Capacitor  |1       |1µF  |≤±20%    |≥10V  |0603        |
+|C5\*                |                |                     |4.7µF, 10V SMT Ceramic Capacitor|1       |4.7µF|≤±20%    |≥10V  |0603        |
+|R1, R2              |                |                     |5.1kΩ SMT Resistor              |2       |5.1kΩ|≤±1%     |      |0603        |
+|R3                  |                |                     |100kΩ SMT Resistor              |1       |100kΩ|≤±5%     |      |0603        |
+|R4, R5, R6          |                |                     |10kΩ SMT Resistor               |3       |10kΩ |≤±5%     |      |0603        |
+|R7                  |                |                     |330Ω                            |1       |330Ω |≤±5%     |      |0603        |
+|R8                  |                |                     |120Ω                            |1       |120Ω |≤±5%     |      |0603        |
+|R9                  |                |                     |91Ω                             |1       |91Ω  |≤±5%     |      |0603        |
+|J1                  |Molex           |105450-0101          |USB-C SMT Connector             |1       |     |         |      |            |
+|J2                  |JST Inc.        |S6B-PH-SM4-TB(LF)(SN)|6-Pins SMT JST PH Connector     |1       |     |         |      |            |
+
+> Notes:
+> - \*`C5` is only required to modify the device OTP memory. It can be ignored.
+> - Red LED is for power, Blue LED is for host RX, Green LED is for host TX.
