@@ -17,6 +17,8 @@ The programming post is a 6-pins JST PH SMT connector, with the following mappin
 
 ## Bill of Material
 
+You can find the BOM on Octopart via this [link](https://octopart.com/bom-tool/CL9CJzFa).
+
 |Reference Designator|Manufacturer    |Product Number       |Description                     |Quantity|Value|Tolerance|Rating|Package     |
 |--------------------|----------------|---------------------|--------------------------------|--------|-----|---------|------|------------|
 |U1                  |Diodes Inc.     |AP2112K-3.3          |3.3V 600mA LDO w/ EN            |1       |     |         |      |SOT25       |
